@@ -9,7 +9,7 @@ function adjustMargins() {
 
     const profilePic = document.querySelector('.profile-pic');        
     if (profilePic){
-        profilePic.src = 'images/neurips-modified.png';
+        profilePic.src = 'images/neurips-modified.webp';
         profilePic.style.opacity = '1';
     }
 
@@ -26,11 +26,11 @@ function adjustMargins() {
             rightColumn.style.padding = '20px';
             rightColumn.style.marginTop = '0';
 
-            const element = document.querySelector('.right-column'); 
-            const overflowedHeight = element.scrollHeight - element.clientHeight;
-            const hrMarginTop = overflowedHeight + 100;    
-            const hr = document.getElementsByTagName('hr')[0];
-            hr.style.marginTop = `${hrMarginTop}px`;
+            // const element = document.querySelector('.right-column'); 
+            // const overflowedHeight = element.scrollHeight - element.clientHeight;
+            // const hrMarginTop = overflowedHeight + 100;    
+            // const hr = document.getElementsByTagName('hr')[0];
+            // hr.style.marginTop = `${hrMarginTop}px`;
 
             const publicationPageContainer = document.querySelector('.publication-page-container');
             if (publicationPageContainer) {
@@ -70,11 +70,11 @@ function adjustMargins() {
             rightColumn.style.padding = '0';
             rightColumn.style.margin = '0';
             rightColumn.style.marginTop = '20px';
-            const overflowedHeight = rightColumn.scrollHeight - rightColumn.clientHeight;
-            const leftColumnHeight = leftColumn.offsetHeight;
-            const hrMarginTop = overflowedHeight + 100 + leftColumnHeight;
-            const hr = document.getElementsByTagName('hr')[0];
-            hr.style.marginTop = `${hrMarginTop}px`;
+            // const overflowedHeight = rightColumn.scrollHeight - rightColumn.clientHeight;
+            // const leftColumnHeight = leftColumn.offsetHeight;
+            // const hrMarginTop = overflowedHeight + 100 + leftColumnHeight;
+            // const hr = document.getElementsByTagName('hr')[0];
+            // hr.style.marginTop = `${hrMarginTop}px`;
         }
 
         const publicationPageContainer = document.querySelector('.publication-page-container');
